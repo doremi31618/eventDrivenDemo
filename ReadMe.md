@@ -2,6 +2,9 @@
 
 This is a sample Java Spring Boot project demonstrating event-driven architecture using Kafka and RabbitMQ.
 
+## Purpose
+This is an event-driven demo application designed to handle and process events using Kafka and RabbitMQ as message brokers. The application demonstrates how to publish, consume, and dispatch events to appropriate handlers in a microservices architecture. It serves as a hands-on project to showcase event-driven design patterns and integration of message queue systems.
+
 ## Prerequisites
 - **Windows 10/11 with WSL2 enabled**
 - **Docker Desktop** (with WSL2 integration enabled)
