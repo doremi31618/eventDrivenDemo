@@ -1,6 +1,6 @@
-# Local Kafka + RabbitMQ Environment Setup (Windows + Docker + WSL2)
+# Event Driven Demo
 
-This guide explains how to quickly set up **Kafka** and **RabbitMQ** in a local development environment using **Docker Compose** on **Windows** with **WSL2**.
+This is a sample Java Spring Boot project demonstrating event-driven architecture using Kafka and RabbitMQ.
 
 ## Prerequisites
 - **Windows 10/11 with WSL2 enabled**
@@ -50,6 +50,38 @@ This guide explains how to quickly set up **Kafka** and **RabbitMQ** in a local 
     ```bash
     docker compose logs -f
     ```
+## Build and Run Project
+### Build the project using Maven Wrapper:
+
+#### Mac/Linux:
+
+```bash
+./mvnw clean package
+```
+
+Windows (in PowerShell or CMD):
+```commandline
+mvnw.cmd clean package
+```
+
+#### Run the application:
+
+```bash
+java -jar target/eventdrivendemo.jar
+```
+
+### Useful Commands
+#### Stop Containers
+
+```bash
+docker compose down
+```
+
+#### View Logs
+
+```bash
+docker compose logs -f
+```
 
 ## Troubleshooting
 - Make sure Docker Desktop is running.
